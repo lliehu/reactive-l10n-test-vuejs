@@ -33,7 +33,16 @@ const i18n = new VueI18Next(i18next)
 
 Vue.config.productionTip = false;
 
+const store = {
+  state: {
+    gender: 'female'
+  }
+};
+
 new Vue({
   i18n,
   render: h => h(App),
+  data: function() {
+    return store.state
+  }
 }).$mount('#app');

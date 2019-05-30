@@ -17,11 +17,6 @@ export default {
     HelloWorld,
     List,
     TargetPronounChanger
-  },
-  data: function () {
-    return {
-      gender: 'female'
-    }
   }
 }
 </script>
