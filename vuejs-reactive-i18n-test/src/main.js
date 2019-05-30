@@ -11,7 +11,14 @@ i18next.init({
   resources: {
     en: {
       translation: {
-        "testString": "Test string"
+        "app": {
+          "name": "Vue.js Reactive I18n test"
+        },
+        "testString": "Test string",
+        "cat_count_he": "There is only {{count}} cat plotting to kill him.",
+        "cat_count_he_plural": "There are already {{count}} cats plotting to kill him.",
+        "cat_count_she": "There is only {{count}} cat plotting to kill her.",
+        "cat_count_she_plural": "There are already {{count}} cats plotting to kill her."
       }
     }
   }

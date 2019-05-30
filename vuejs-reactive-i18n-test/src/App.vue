@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <span>{{ $t("testString") }}</span>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>{{ $t('app.name') }}</h1>
+    <List/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import List from './components/List.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    List
   }
 }
 </script>
