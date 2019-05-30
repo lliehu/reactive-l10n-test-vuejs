@@ -35,7 +35,8 @@ Vue.config.productionTip = false;
 
 const store = {
   state: {
-    gender: 'female'
+    gender: 'female',
+    language: 'en'
   }
 };
 

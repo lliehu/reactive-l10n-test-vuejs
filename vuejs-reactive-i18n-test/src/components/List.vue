@@ -1,6 +1,6 @@
 <template>
     <div>
-        <span>{{ $t("cat_count", { context: this.$root.$data.gender, count: 3} ) }}</span>
+        <span>{{ $t("cat_count", { context: gender, count: 3} ) }}</span>
     </div>
 </template>
 
@@ -8,6 +8,11 @@
     export default {
         name: 'List',
         props: {
+        },
+        computed: {
+            gender() {
+                return this.$root.$data.gender;
+            }
         }
     }
 </script>
