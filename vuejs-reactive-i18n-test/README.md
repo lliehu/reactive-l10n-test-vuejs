@@ -1,5 +1,12 @@
 # vuejs-reactive-i18n-test
 
+
+## TODO
+
+* Detect language change in navigator.language?
+* Put translations somewhere else.
+* Reactive retranslation when translation source changes.
+
 ## Project setup
 ```
 npm install
