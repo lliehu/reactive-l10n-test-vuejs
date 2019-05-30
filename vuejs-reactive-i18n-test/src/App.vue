@@ -2,18 +2,26 @@
   <div id="app">
     <h1>{{ $t('app.name') }}</h1>
     <List/>
+    <TargetPronounChanger/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import List from './components/List.vue'
+import TargetPronounChanger from './components/TargetPronounChanger'
 
 export default {
   name: 'app',
   components: {
     HelloWorld,
-    List
+    List,
+    TargetPronounChanger
+  },
+  data: function () {
+    return {
+      gender: 'female'
+    }
   }
 }
 </script>

@@ -15,10 +15,15 @@ i18next.init({
           "name": "Vue.js Reactive I18n test"
         },
         "testString": "Test string",
-        "cat_count_he": "There is only {{count}} cat plotting to kill him.",
-        "cat_count_he_plural": "There are already {{count}} cats plotting to kill him.",
-        "cat_count_she": "There is only {{count}} cat plotting to kill her.",
-        "cat_count_she_plural": "There are already {{count}} cats plotting to kill her."
+        "cat_count": "There is only {{count}} cat plotting to kill them.",
+        "cat_count_plural": "There are already {{count}} cats plotting to kill them.",
+        "cat_count_female": "There is only {{count}} cat plotting to kill her.",
+        "cat_count_female_plural": "There are already {{count}} cats plotting to kill her.",
+        "cat_count_male": "There is only {{count}} cat plotting to kill him.",
+        "cat_count_male_plural": "There are already {{count}} cats plotting to kill him.",
+        "gendered_pronoun_object": "them",
+        "gendered_pronoun_object_female": "her",
+        "gendered_pronoun_object_male": "him"
       }
     }
   }

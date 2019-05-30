@@ -1,6 +1,6 @@
 <template>
     <div>
-        <span>{{ $t("cat_count", { context: 'he', count: 3} ) }}</span>
+        <span>{{ $t("cat_count", { context: gender, count: 3} ) }}</span>
     </div>
 </template>
 
@@ -9,6 +9,11 @@
         name: 'List',
         props: {
 
+        },
+        data: function() {
+            return {
+                gender: 'male'
+            }
         }
     }
 </script>
