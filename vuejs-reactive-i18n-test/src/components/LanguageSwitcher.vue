@@ -6,6 +6,8 @@
 </template>
 
 <script>
+    import i18next from 'i18next'
+
     export default {
         name: 'TargetPronounChanger',
         props: {
@@ -14,6 +16,7 @@
             switchLanguageTo(newLanguage = 'en') {
                 console.log('Changing language to: ' + newLanguage);
                 this.$root.$data.language = newLanguage;
+                i18next.changeLanguage(newLanguage);
             }
         },
         computed: {

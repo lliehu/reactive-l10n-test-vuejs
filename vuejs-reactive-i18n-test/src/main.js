@@ -25,6 +25,23 @@ i18next.init({
         "gendered_pronoun_object_female": "her",
         "gendered_pronoun_object_male": "him"
       }
+    },
+    fi: {
+      translation: {
+        "app": {
+          "name": "Reaktiivinen internationalisointitesti Vue.js:llä"
+        },
+        "testString": "Testimerkkijono",
+        "cat_count": "Vain yksi {{count}} kissa juonii hänen tappamista.",
+        "cat_count_plural": "Jo {{count}} kissaa juonii hänen tappamista.",
+        "cat_count_female": "Vain yksi {{count}} kissa juonii hänen tappamista.",
+        "cat_count_female_plural": "Jo {{count}} kissaa juonii hänen tappamista.",
+        "cat_count_male": "Vain yksi {{count}} kissa juonii hänen tappamista.",
+        "cat_count_male_plural": "Jo {{count}} kissaa juonii hänen tappamista.",
+        "gendered_pronoun_object": "hän (neutraali)",
+        "gendered_pronoun_object_female": "hän (nainen)",
+        "gendered_pronoun_object_male": "hän (mies)"
+      }
     }
   }
 });
