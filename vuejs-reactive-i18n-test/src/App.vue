@@ -2,6 +2,7 @@
   <div id="app">
     <h1>{{ $t('app.name') }}</h1>
     <List/>
+    <CatCountInput/>
     <TargetPronounChanger/>
     <LanguageSwitcher/>
   </div>
@@ -12,10 +13,12 @@ import HelloWorld from './components/HelloWorld.vue'
 import List from './components/List.vue'
 import TargetPronounChanger from './components/TargetPronounChanger.vue'
 import LanguageSwitcher from './components/LanguageSwitcher.vue'
+import CatCountInput from "@/components/CatCountInput";
 
 export default {
   name: 'app',
   components: {
+    CatCountInput,
     HelloWorld,
     List,
     TargetPronounChanger,

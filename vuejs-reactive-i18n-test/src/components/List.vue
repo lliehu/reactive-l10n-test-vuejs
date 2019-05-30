@@ -1,6 +1,7 @@
 <template>
     <div>
-        <span>{{ $t("cat_count", { context: gender, count: 3} ) }}</span>
+        <!-- TODO FIXME Do not use parseInt. -->
+        <span>{{ $t("cat_count", { context: gender, count: parseInt(catCount)} ) }}</span>
     </div>
 </template>
 
@@ -12,6 +13,9 @@
         computed: {
             gender() {
                 return this.$root.$data.gender;
+            },
+            catCount() {
+                return this.$root.$data.catCount;
             }
         }
     }

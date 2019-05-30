@@ -15,15 +15,16 @@ i18next.init({
           "name": "Vue.js Reactive I18n test"
         },
         "testString": "Test string",
-        "cat_count": "There is only {{count}} cat plotting to kill them.",
-        "cat_count_plural": "There are already {{count}} cats plotting to kill them.",
-        "cat_count_female": "There is only {{count}} cat plotting to kill her.",
-        "cat_count_female_plural": "There are already {{count}} cats plotting to kill her.",
-        "cat_count_male": "There is only {{count}} cat plotting to kill him.",
-        "cat_count_male_plural": "There are already {{count}} cats plotting to kill him.",
+        "cat_count": "Only {{count}} cat plotting to kill them.",
+        "cat_count_plural": "{{count}} cats plotting to kill them.",
+        "cat_count_female": "Only {{count}} cat plotting to kill her.",
+        "cat_count_female_plural": "{{count}} cats plotting to kill her.",
+        "cat_count_male": "Only {{count}} cat plotting to kill him.",
+        "cat_count_male_plural": "{{count}} cats plotting to kill him.",
         "gendered_pronoun_object": "them",
         "gendered_pronoun_object_female": "her",
-        "gendered_pronoun_object_male": "him"
+        "gendered_pronoun_object_male": "him",
+        "cat_count_label": "Cat count:"
       }
     },
     fi: {
@@ -33,14 +34,15 @@ i18next.init({
         },
         "testString": "Testimerkkijono",
         "cat_count": "Vain yksi {{count}} kissa juonii hänen tappamista.",
-        "cat_count_plural": "Jo {{count}} kissaa juonii hänen tappamista.",
+        "cat_count_plural": "{{count}} kissaa juonii hänen tappamista.",
         "cat_count_female": "Vain yksi {{count}} kissa juonii hänen tappamista.",
-        "cat_count_female_plural": "Jo {{count}} kissaa juonii hänen tappamista.",
+        "cat_count_female_plural": "{{count}} kissaa juonii hänen tappamista.",
         "cat_count_male": "Vain yksi {{count}} kissa juonii hänen tappamista.",
-        "cat_count_male_plural": "Jo {{count}} kissaa juonii hänen tappamista.",
+        "cat_count_male_plural": "{{count}} kissaa juonii hänen tappamista.",
         "gendered_pronoun_object": "hän (neutraali)",
         "gendered_pronoun_object_female": "hän (nainen)",
-        "gendered_pronoun_object_male": "hän (mies)"
+        "gendered_pronoun_object_male": "hän (mies)",
+        "cat_count_label": "Kissojen määrä:"
       }
     }
   }
@@ -57,7 +59,8 @@ Vue.config.productionTip = false;
 const store = {
   state: {
     gender: 'female',
-    language: 'en'
+    language: 'en',
+    catCount: 0
   }
 };
 
