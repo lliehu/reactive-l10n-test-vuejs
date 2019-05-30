@@ -15,7 +15,6 @@
         methods: {
             switchLanguageTo(newLanguage = 'en') {
                 console.log('Changing language to: ' + newLanguage);
-                this.$root.$data.language = newLanguage;
                 i18next.changeLanguage(newLanguage);
             }
         },

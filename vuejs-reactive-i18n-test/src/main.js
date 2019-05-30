@@ -46,7 +46,11 @@ i18next.init({
   }
 });
 
-const i18n = new VueI18Next(i18next)
+i18next.on('languageChanged', function(lng) {
+  store.state.language = lng;
+});
+
+const i18n = new VueI18Next(i18next);
 
 Vue.config.productionTip = false;
 
