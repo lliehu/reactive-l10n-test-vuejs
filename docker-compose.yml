@@ -1,0 +1,15 @@
+version: "3"
+services:
+  app:
+    build: .
+    ports:
+      - "1337:80"
+    volumes:
+      - .:/opt/app
+      - reserved:/opt/app/node_modules/
+    entrypoint:
+      - npm
+      - run
+      - serve
+volumes:
+  reserved:
