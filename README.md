@@ -1,6 +1,5 @@
 # vuejs-reactive-i18n-test
 
-
 ## TODO
 
 * Detect language change in navigator.language?
@@ -9,9 +8,14 @@
 * Test select component. There are usually some kind of problems with them.
 
 ## Project setup
+
 ```
-npm install
+docker-compose up
 ```
+
+This will create a Docker container and run `npm install`.
+
+## Command for use inside the Docker container
 
 ### Compiles and hot-reloads for development
 ```
