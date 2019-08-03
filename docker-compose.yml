@@ -3,9 +3,10 @@ services:
   app:
     build: .
     ports:
-      - "1337:80"
+      - "1337:80" # host:container
     volumes:
       - .:/opt/app
+      # Hack for excluding node_modules
       - reserved:/opt/app/node_modules/
     entrypoint:
       - npm

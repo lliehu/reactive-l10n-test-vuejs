@@ -15,6 +15,8 @@ docker-compose up
 
 This will create a Docker container and run `npm install`.
 
+For editing Vue.js code with Visual Studio Code, it is recommended to install the Vetur.
+
 ## Command for use inside the Docker container
 
 ### Compiles and hot-reloads for development
