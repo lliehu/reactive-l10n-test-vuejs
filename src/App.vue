@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import List from './components/List.vue'
 import TargetPronounChanger from './components/TargetPronounChanger.vue'
 import LanguageSwitcher from './components/LanguageSwitcher.vue'
@@ -19,7 +18,6 @@ export default {
   name: 'app',
   components: {
     CatCountInput,
-    HelloWorld,
     List,
     TargetPronounChanger,
     LanguageSwitcher
