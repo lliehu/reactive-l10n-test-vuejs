@@ -6,6 +6,9 @@
 * Put translations somewhere else.
 * Reactive retranslation when translation source changes.
 * Test select component. There are usually some kind of problems with them.
+* Insert a map.
+* Be able to insert places to map and comment them.
+* App message log (language switching also switches language of past messages)
 
 ## Project setup
 
