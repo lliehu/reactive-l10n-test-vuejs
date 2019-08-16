@@ -9,7 +9,7 @@
     import i18next from 'i18next'
 
     export default {
-        name: 'TargetPronounChanger',
+        name: 'LanguageSwitcher',
         props: {
         },
         methods: {
