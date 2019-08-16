@@ -45,8 +45,19 @@ const i18nResources = {
   }
 };
 
+const store = {
+  state: {
+    gender: 'female',
+    language: navigator.language,
+    catCount: 0,
+    resources: i18nResources
+    // TODO How to describe that current language is either based on browser
+    // or has been forced.
+  }
+};
+
 i18next.init({
-  lng: 'en',
+  lng: store.state.language,
   resources: i18nResources
 });
 
@@ -58,14 +69,9 @@ const i18n = new VueI18Next(i18next);
 
 Vue.config.productionTip = false;
 
-const store = {
-  state: {
-    gender: 'female',
-    language: 'en',
-    catCount: 0,
-    resources: i18nResources
-  }
-};
+window.addEventListener("languagechange", () => {
+  i18next.changeLanguage(navigator.language);
+});
 
 new Vue({
   i18n,
