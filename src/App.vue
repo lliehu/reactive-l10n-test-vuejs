@@ -5,6 +5,7 @@
     <CatCountInput/>
     <TargetPronounChanger/>
     <LanguageSwitcher/>
+    <Map/>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import List from './components/List.vue'
 import TargetPronounChanger from './components/TargetPronounChanger.vue'
 import LanguageSwitcher from './components/LanguageSwitcher.vue'
 import CatCountInput from "@/components/CatCountInput";
+import Map from './components/Map.vue'
 
 export default {
   name: 'app',
@@ -20,7 +22,8 @@ export default {
     CatCountInput,
     List,
     TargetPronounChanger,
-    LanguageSwitcher
+    LanguageSwitcher,
+    Map
   }
 }
 </script>
