@@ -14,6 +14,7 @@
         },
         methods: {
             switchLanguageTo(newLanguage = 'en') {
+                this.$root.$data.manuallySelectedLanguage = true;
                 i18next.changeLanguage(newLanguage);
             }
         },

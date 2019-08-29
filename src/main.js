@@ -50,9 +50,10 @@ const store = {
     gender: 'female',
     language: navigator.language,
     catCount: 0,
-    resources: i18nResources
-    // TODO How to describe that current language is either based on browser
-    // or has been forced.
+    resources: i18nResources,
+    // True if language has been manually selected.
+    // False e.g. when language is detected from navigator.language.
+    manuallySelectedLanguage: false
   }
 };
 
@@ -70,7 +71,9 @@ const i18n = new VueI18Next(i18next);
 Vue.config.productionTip = false;
 
 window.addEventListener("languagechange", () => {
-  i18next.changeLanguage(navigator.language);
+  if (!store.state.manuallySelectedLanguage) {
+    i18next.changeLanguage(navigator.language);
+  }
 });
 
 new Vue({
