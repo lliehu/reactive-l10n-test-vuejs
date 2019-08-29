@@ -2,7 +2,6 @@
 
 ## TODO
 
-* Detect language change in navigator.language?
 * Put translations somewhere else.
 * Reactive retranslation when translation source changes.
 * Test select component. There are usually some kind of problems with them.
