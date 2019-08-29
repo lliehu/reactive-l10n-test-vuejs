@@ -9,6 +9,7 @@
 * Insert a map.
 * Be able to insert places to map and comment them.
 * App message log (language switching also switches language of past messages)
+* Better store management to avoid bad architecture
 
 ## Project setup
 
