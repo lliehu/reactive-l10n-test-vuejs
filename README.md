@@ -9,7 +9,7 @@
 * Test select component. There are usually some kind of problems with them.
 * Insert a map.
 * Be able to insert places to map and comment them.
-* App message log (language switching also switches language of past messages)
+* App message log (language switching also switches language of past messages) and how much more effort was it instead of creating a "normal" app message log
 * Better store management to avoid bad architecture
 
 ## Project setup
@@ -20,9 +20,9 @@ docker-compose up
 
 This will create a Docker container and run `npm install`.
 
-For editing Vue.js code with Visual Studio Code, it is recommended to install the Vetur.
+For editing Vue.js code with Visual Studio Code, it is recommended to install the Vetur extension for that editor.
 
-## Command for use inside the Docker container
+## Commands for use inside the Docker container
 
 ### Compiles and hot-reloads for development
 ```
