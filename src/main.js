@@ -24,7 +24,8 @@ const i18nResources = {
       "gendered_pronoun_object_male": "him",
       "cat_count_label": "Cat count:",
       "message_log": {
-        "title": "Message log"
+        "title": "Message log",
+        "test_message": "Testing, 1, 2, 3, testing..."
       }
     }
   },
@@ -45,7 +46,8 @@ const i18nResources = {
       "gendered_pronoun_object_male": "hän (mies)",
       "cat_count_label": "Kissojen määrä:",
       "message_log": {
-        "title": "Viestiloki"
+        "title": "Viestiloki",
+        "test_message": "Testataan, 1, 2, 3, testataan..."
       }
     }
   }
@@ -62,9 +64,21 @@ const store = {
     manuallySelectedLanguage: false,
     messageLog: {
       messageList: [
-        "foo",
-        "bar",
-        "baz"
+        {
+          time: new Date(),
+          messageId: "message_log.test_message",
+          parameters: {}
+        },
+        {
+          time: new Date(),
+          messageId: "message_log.test_message",
+          parameters: {}
+        },
+        {
+          time: new Date(),
+          messageId: "message_log.test_message",
+          parameters: {}
+        }
       ]
     }
   }
