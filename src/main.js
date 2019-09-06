@@ -22,7 +22,10 @@ const i18nResources = {
       "gendered_pronoun_object": "them",
       "gendered_pronoun_object_female": "her",
       "gendered_pronoun_object_male": "him",
-      "cat_count_label": "Cat count:"
+      "cat_count_label": "Cat count:",
+      "message_log": {
+        "title": "Message log"
+      }
     }
   },
   fi: {
@@ -40,7 +43,10 @@ const i18nResources = {
       "gendered_pronoun_object": "hän (neutraali)",
       "gendered_pronoun_object_female": "hän (nainen)",
       "gendered_pronoun_object_male": "hän (mies)",
-      "cat_count_label": "Kissojen määrä:"
+      "cat_count_label": "Kissojen määrä:",
+      "message_log": {
+        "title": "Viestiloki"
+      }
     }
   }
 };
@@ -53,7 +59,14 @@ const store = {
     resources: i18nResources,
     // True if language has been manually selected.
     // False e.g. when language is detected from navigator.language.
-    manuallySelectedLanguage: false
+    manuallySelectedLanguage: false,
+    messageLog: {
+      messageList: [
+        "foo",
+        "bar",
+        "baz"
+      ]
+    }
   }
 };
 
