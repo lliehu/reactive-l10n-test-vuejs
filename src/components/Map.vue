@@ -8,9 +8,12 @@ import '../../node_modules/leaflet/dist/leaflet.css';
 
 export default {
     name: 'Map',
+    data: {
+        map: null
+    },
     methods: {
         initMap() {
-            this.map = leaflet.map('map').setView([61.45, 23.85], 12);
+            this.$data.map = leaflet.map('map').setView([61.45, 23.85], 12);
             
             this.tileLayer = leaflet.tileLayer(
                 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png',
