@@ -13,7 +13,7 @@
 
 <script>
 export default {
-    name: 'app',
+    name: 'MessageLog',
     computed: {
         language() {
             return this.$root.$data.language;
