@@ -8,8 +8,10 @@ import '../../node_modules/leaflet/dist/leaflet.css';
 
 export default {
     name: 'Map',
-    data: {
-        map: null
+    data: function() {
+        return {
+            map: null
+        };
     },
     methods: {
         initMap() {
@@ -22,7 +24,7 @@ export default {
                     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>',
                 }
             );
-            this.tileLayer.addTo(this.map);
+            this.tileLayer.addTo(this.$data.map);
         }
     },
     mounted() {
