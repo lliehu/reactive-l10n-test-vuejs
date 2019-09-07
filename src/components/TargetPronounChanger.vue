@@ -14,7 +14,6 @@
         },
         methods: {
             switchPronounTo(newPronoun = '') {
-                console.log('Changing pronoun to: ' + newPronoun);
                 this.$root.$data.gender = newPronoun;
             }
         },
