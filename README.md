@@ -2,6 +2,7 @@
 
 ## TODO
 
+* Reactive translation of document.title
 * Explore i18next backends. https://www.i18next.com/overview/plugins-and-utils What happens when translation strings are modified? How can this be reflected in the UI automatically?
 * Language switcher that shows correct status also when language is auto detected.
 * Put translations somewhere else.
