@@ -26,6 +26,10 @@ const i18nResources = {
       "message_log": {
         "title": "Message log",
         "test_message": "Testing, 1, 2, 3, testing..."
+      },
+      "map": {
+        "zoomInTitle": "Zoom in",
+        "zoomOutTitle": "Zoom out",
       }
     }
   },
@@ -48,6 +52,10 @@ const i18nResources = {
       "message_log": {
         "title": "Viestiloki",
         "test_message": "Testataan, 1, 2, 3, testataan..."
+      },
+      "map": {
+        "zoomInTitle": "Lähennä",
+        "zoomOutTitle": "Loitonna",
       }
     }
   }

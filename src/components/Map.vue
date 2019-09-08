@@ -15,7 +15,9 @@ export default {
     },
     methods: {
         initMap() {
-            this.$data.map = leaflet.map('map').setView([61.45, 23.85], 12);
+            this.$data.map = leaflet.map('map', {
+                zoomControl: false
+            }).setView([61.45, 23.85], 12);
             
             this.tileLayer = leaflet.tileLayer(
                 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png',
@@ -25,10 +27,23 @@ export default {
                 }
             );
             this.tileLayer.addTo(this.$data.map);
+        },
+        initZoomControl() {
+            if (this.$data.zoomControl) {
+                this.$data.zoomControl.remove();
+                this.$data.zoomControl = null;
+            }
+            this.$data.zoomControl = leaflet.control.zoom({
+                zoomInTitle: this.$i18n.i18next.t('map.zoomInTitle'),
+                zoomOutTitle: this.$i18n.i18next.t('map.zoomOutTitle')
+            });
+            this.$data.zoomControl.addTo(this.$data.map);
         }
     },
     mounted() {
         this.initMap();
+        this.initZoomControl();
+        this.$i18n.i18next.on('languageChanged', this.initZoomControl);
     }
 }
 </script>
