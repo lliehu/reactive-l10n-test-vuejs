@@ -15,6 +15,7 @@
 
 ### Want to research
 
+* Look into the reason why translations are automatically updated in the UI when language changes.
 * Look into how vue-i18next npm package handles reactive localization.
 * How does vue integration for Leaflet (npm packages) deal with localization? Or do they at all?
 
