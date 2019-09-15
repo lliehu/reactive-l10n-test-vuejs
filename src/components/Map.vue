@@ -53,6 +53,8 @@ export default {
     mounted() {
         this.initMap();
         this.$watch(this.initZoomControl);
+        // TODO Is this really needed? Can I find some way so tha
+        // this is not needed? Think about it.
         this.$i18n.i18next.on('languageChanged', this.initZoomControl);
     }
 }
