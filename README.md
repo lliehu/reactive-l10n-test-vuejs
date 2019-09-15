@@ -4,13 +4,14 @@
 
 ### Need to code
 
+* Realistic store management: Vuex?
+* Realistic translation store
 * Reactive translation of document.title
 * Explore i18next backends. https://www.i18next.com/overview/plugins-and-utils What happens when translation strings are modified? How can this be reflected in the UI automatically?
 * Language switcher that shows correct status also when language is auto detected.
 * Put translations somewhere else.
 * Reactive retranslation when translation source changes.
 * Be able to insert places to map and comment them.
-* App message log (language switching also switches language of past messages) and how much more effort was it instead of creating a "normal" app message log
 
 ### Want to research
 
@@ -20,7 +21,6 @@
 ### Nice to have at some point
 
 * Test select component. There are usually some kind of problems with them.
-* Better store management to avoid bad architecture: Vuex?
 
 ## Project setup
 
