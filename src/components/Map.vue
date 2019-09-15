@@ -29,20 +29,30 @@ export default {
             this.tileLayer.addTo(this.$data.map);
         },
         initZoomControl() {
+            // This probably only works if translations objects
+            // are made reactive by Vue.js.
+            let zoomInTitle = this.$i18n.i18next.t('map.zoomInTitle');
+            let zoomOutTitle = this.$i18n.i18next.t('map.zoomOutTitle');
+
             if (this.$data.zoomControl) {
+                let currentOptions = this.$data.zoomControl.options;
+                if (currentOptions.zoomInTitle === zoomInTitle &&
+                  currentOptions.zoomOutTitle === zoomOutTitle) {
+                    return;
+                }
                 this.$data.zoomControl.remove();
                 this.$data.zoomControl = null;
             }
             this.$data.zoomControl = leaflet.control.zoom({
-                zoomInTitle: this.$i18n.i18next.t('map.zoomInTitle'),
-                zoomOutTitle: this.$i18n.i18next.t('map.zoomOutTitle')
+                zoomInTitle,
+                zoomOutTitle
             });
             this.$data.zoomControl.addTo(this.$data.map);
         }
     },
     mounted() {
         this.initMap();
-        this.initZoomControl();
+        this.$watch(this.initZoomControl);
         this.$i18n.i18next.on('languageChanged', this.initZoomControl);
     }
 }
