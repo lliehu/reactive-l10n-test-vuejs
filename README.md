@@ -1,4 +1,4 @@
-# vuejs-reactive-i18n-test
+# Reactive i18n test application using Vue.js and i18next
 
 ## TODO
 
