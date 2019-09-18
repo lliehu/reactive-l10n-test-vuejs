@@ -4,10 +4,10 @@
 
 ### Need to code
 
-* Realistic store management: Vuex?
 * Realistic translation store
+    * Explore i18next backends. https://www.i18next.com/overview/plugins-and-utils What happens when translation strings are modified? How can this be reflected in the UI automatically?
 * Reactive translation of document.title
-* Explore i18next backends. https://www.i18next.com/overview/plugins-and-utils What happens when translation strings are modified? How can this be reflected in the UI automatically?
+* Better store: https://vuejs.org/v2/guide/state-management.html#Simple-State-Management-from-Scratch
 * Language switcher that shows correct status also when language is auto detected.
 * Put translations somewhere else.
 * Reactive retranslation when translation source changes.
