@@ -4,8 +4,6 @@
 
 ### Need to code
 
-* Realistic translation store
-    * Explore i18next backends. https://www.i18next.com/overview/plugins-and-utils What happens when translation strings are modified? How can this be reflected in the UI automatically?
 * Reactive translation of document.title
 * Better store: https://vuejs.org/v2/guide/state-management.html#Simple-State-Management-from-Scratch
 * Language switcher that shows correct status also when language is auto detected.
@@ -15,6 +13,7 @@
 
 ### Want to research
 
+* Do changes to translation files update automatically to the UI?
 * Look into the reason why translations are automatically updated in the UI when language changes.
 * Look into how vue-i18next npm package handles reactive localization.
 * How does vue integration for Leaflet (npm packages) deal with localization? Or do they at all?

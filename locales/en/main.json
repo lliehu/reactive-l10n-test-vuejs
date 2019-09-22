@@ -1,0 +1,26 @@
+{
+    "translation": {
+        "app": {
+            "name": "Vue.js Reactive I18n test"
+        },
+        "testString": "Test string",
+        "cat_count": "Only {{count}} cat plotting to kill them.",
+        "cat_count_plural":"{{count}} cats plotting to kill them.",
+        "cat_count_female":"Only {{count}} cat plotting to kill her.",
+        "cat_count_female_plural":"{{count}} cats plotting to kill her.",
+        "cat_count_male":"Only {{count}} cat plotting to kill him.",
+        "cat_count_male_plural":"{{count}} cats plotting to kill him.",
+        "gendered_pronoun_object":"them",
+        "gendered_pronoun_object_female":"her",
+        "gendered_pronoun_object_male":"him",
+        "cat_count_label":"Cat count:",
+        "message_log": {
+            "title":"Message log",
+            "test_message":"Testing, 1, 2, 3, testing..."
+        },
+        "map": {
+            "zoomInTitle": "Zoom in",
+            "zoomOutTitle": "Zoom out"
+        }
+    }
+}
