@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@alienfast/i18next-loader": "^1.0.18",
     "@panter/vue-i18next": "^0.15.0",
     "@vue/eslint-config-prettier": "^5.0.0",
     "core-js": "^2.6.5",
