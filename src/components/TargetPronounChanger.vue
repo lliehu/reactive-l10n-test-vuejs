@@ -1,8 +1,8 @@
 <template>
     <div>
-        <button @click="switchPronounTo('')" :class="{ selected: !!!gender}">{{ $t('gendered_pronoun_object') }}</button>
-        <button @click="switchPronounTo('female')" :class="{ selected: gender === 'female'}">{{ $t('gendered_pronoun_object', {context: 'female'}) }}</button>
-        <button @click="switchPronounTo('male')" :class="{ selected: gender === 'male'}">{{ $t('gendered_pronoun_object', {context: 'male'}) }}</button>
+        <v-btn @click="switchPronounTo('')" :color="!!!gender ? 'success' : ''">{{ $t('gendered_pronoun_object') }}</v-btn>
+        <v-btn @click="switchPronounTo('female')" :color="gender === 'female' ? 'success' : ''">{{ $t('gendered_pronoun_object', {context: 'female'}) }}</v-btn>
+        <v-btn @click="switchPronounTo('male')" :color="gender === 'male' ? 'success' : ''">{{ $t('gendered_pronoun_object', {context: 'male'}) }}</v-btn>
     </div>
 </template>
 
@@ -26,14 +26,4 @@
 </script>
 
 <style scoped>
-    button {
-        background: white;
-        color: black;
-        border: 1px solid #333;
-        padding: 1em;
-    }
-    .selected {
-        background: green;
-        color: white;
-    }
 </style>
