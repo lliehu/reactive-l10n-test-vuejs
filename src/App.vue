@@ -1,13 +1,29 @@
 <template>
-  <div id="app">
-    <h1>{{ $t('app.name') }}</h1>
-    <List/>
-    <CatCountInput/>
-    <TargetPronounChanger/>
-    <LanguageSwitcher/>
-    <Map/>
-    <MessageLog/>
-  </div>
+  <v-app>
+    <v-app-bar app>
+      <v-toolbar-title class="headline text-uppercase">
+        {{ $t('app.name') }}
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn
+        text
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+      >
+        <span class="mr-2">Latest Release</span>
+      </v-btn>
+    </v-app-bar>
+
+    <v-content>
+      <List/>
+      <CatCountInput/>
+      <TargetPronounChanger/>
+      <LanguageSwitcher/>
+      <Map/>
+      <MessageLog/>
+      <HelloWorld/>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
@@ -17,18 +33,23 @@ import LanguageSwitcher from './components/LanguageSwitcher.vue'
 import CatCountInput from "@/components/CatCountInput";
 import Map from './components/Map.vue'
 import MessageLog from './components/MessageLog.vue'
+import HelloWorld from './components/HelloWorld';
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     CatCountInput,
     List,
     TargetPronounChanger,
     LanguageSwitcher,
     Map,
-    MessageLog
-  }
-}
+    MessageLog,
+    HelloWorld,
+  },
+  data: () => ({
+    //
+  }),
+};
 </script>
 
 <style>

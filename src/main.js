@@ -5,6 +5,7 @@ import i18next from 'i18next'
 import VueI18Next from '@panter/vue-i18next'
 
 import localeResources from '../locales'
+import vuetify from './plugins/vuetify';
 
 Vue.use(VueI18Next)
 
@@ -61,6 +62,8 @@ window.addEventListener('languagechange', () => {
 new Vue({
   i18n,
   render: h => h(App),
+  vuetify,
+
   data: function() {
     return store.state
   }
