@@ -25,7 +25,13 @@
           <LanguageSwitcher/>
         </v-card-actions>
       </v-card>
-      <Map/>
+
+      <v-card>
+        <v-card-text>
+          <Map/>
+        </v-card-text>
+      </v-card>
+
       <MessageLog/>
     </v-content>
   </v-app>
