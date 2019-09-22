@@ -15,10 +15,16 @@
     </v-app-bar>
 
     <v-content>
-      <List/>
-      <CatCountInput/>
-      <TargetPronounChanger/>
-      <LanguageSwitcher/>
+      <v-card width="600px" class="mx-auto">
+        <v-card-text>
+          <List/>
+          <CatCountInput/>
+        </v-card-text>
+        <v-card-actions>
+          <TargetPronounChanger/>
+          <LanguageSwitcher/>
+        </v-card-actions>
+      </v-card>
       <Map/>
       <MessageLog/>
       <HelloWorld/>
