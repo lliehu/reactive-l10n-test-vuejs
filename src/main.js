@@ -59,7 +59,7 @@ window.addEventListener('languagechange', () => {
   }
 })
 
-new Vue({
+let vueApp = new Vue({
   i18n,
   render: h => h(App),
   vuetify,
@@ -68,3 +68,11 @@ new Vue({
     return store.state
   }
 }).$mount('#app')
+
+function translateDocumentTitle() {
+  document.title = i18next.t('app.name')
+  console.log('Translated title')
+}
+
+vueApp.$watch(translateDocumentTitle)
+i18next.on('languageChanged', translateDocumentTitle)

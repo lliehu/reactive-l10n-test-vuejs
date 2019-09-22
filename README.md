@@ -4,7 +4,6 @@
 
 ### Need to code
 
-* Reactive translation of document.title
 * Better store: https://vuejs.org/v2/guide/state-management.html#Simple-State-Management-from-Scratch
 * Language switcher that shows correct status also when language is auto detected.
 * Put translations somewhere else.
