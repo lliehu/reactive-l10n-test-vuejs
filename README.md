@@ -31,7 +31,11 @@ docker-compose up
 
 This will create a Docker container and run `npm install`.
 
-For editing Vue.js code with Visual Studio Code, it is recommended to install the Vetur extension for that editor.
+For editing Vue.js code with Visual Studio Code, it is recommended to install the following extensions for that editor:
+
+* Vetur
+* ESLint
+* Prettier - Code formatter
 
 ## Commands for use inside the Docker container
 
