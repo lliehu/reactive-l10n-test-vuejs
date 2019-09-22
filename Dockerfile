@@ -5,6 +5,8 @@ FROM node:10
 # install dependencies
 WORKDIR /opt/app
 
+RUN npm install -g @vue/cli
+
 COPY package.json package-lock.json* ./
 RUN npm cache clean --force && npm install
 

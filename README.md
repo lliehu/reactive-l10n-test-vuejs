@@ -30,6 +30,8 @@ docker-compose up
 
 This will create a Docker container and run `npm install`.
 
+If Dockerfile has been changed, the image needs to be rebuilt with `docker-compose build`.
+
 For editing Vue.js code with Visual Studio Code, it is recommended to install the following extensions for that editor:
 
 * Vetur
