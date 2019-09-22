@@ -13,7 +13,7 @@
         "gendered_pronoun_object":"them",
         "gendered_pronoun_object_female":"her",
         "gendered_pronoun_object_male":"him",
-        "cat_count_label":"Cat count:",
+        "cat_count_label":"Cat count",
         "message_log": {
             "title":"Message log",
             "test_message":"Testing, 1, 2, 3, testing..."

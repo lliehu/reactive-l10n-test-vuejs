@@ -13,7 +13,7 @@
         "gendered_pronoun_object": "hän (neutraali)",
         "gendered_pronoun_object_female": "hän (nainen)",
         "gendered_pronoun_object_male": "hän (mies)",
-        "cat_count_label": "Kissojen määrä:",
+        "cat_count_label": "Kissojen määrä",
         "message_log": {
             "title": "Viestiloki",
             "test_message": "Testataan, 1, 2, 3, testataan..."
