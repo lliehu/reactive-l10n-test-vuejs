@@ -27,7 +27,6 @@
       </v-card>
       <Map/>
       <MessageLog/>
-      <HelloWorld/>
     </v-content>
   </v-app>
 </template>
@@ -39,7 +38,6 @@ import LanguageSwitcher from './components/LanguageSwitcher.vue'
 import CatCountInput from "@/components/CatCountInput";
 import Map from './components/Map.vue'
 import MessageLog from './components/MessageLog.vue'
-import HelloWorld from './components/HelloWorld';
 
 export default {
   name: 'App',
@@ -49,8 +47,7 @@ export default {
     TargetPronounChanger,
     LanguageSwitcher,
     Map,
-    MessageLog,
-    HelloWorld,
+    MessageLog
   },
   data: () => ({
     //
