@@ -7,24 +7,34 @@
     </v-app-bar>
 
     <v-content>
-      <v-card width="600px" class="mx-auto">
-        <v-card-text>
-          <List/>
-          <CatCountInput/>
-        </v-card-text>
-        <v-card-actions>
-          <TargetPronounChanger/>
-          <LanguageSwitcher/>
-        </v-card-actions>
-      </v-card>
+      <v-container>
+        <v-row>
+          <v-col cols="12">
+            <v-card width="600px" class="mx-auto">
+              <v-card-text>
+                <List/>
+                <CatCountInput/>
+              </v-card-text>
+              <v-card-actions>
+                <TargetPronounChanger/>
+                <LanguageSwitcher/>
+              </v-card-actions>
+            </v-card>
+          </v-col>
 
-      <v-card>
-        <v-card-text>
-          <Map/>
-        </v-card-text>
-      </v-card>
+          <v-col cols="12">
+            <v-card>
+              <v-card-text>
+                <Map/>
+              </v-card-text>
+            </v-card>
+          </v-col>
 
-      <MessageLog/>
+          <v-col cols="12">
+            <MessageLog/>
+          </v-col>
+        </v-row>
+      </v-container>
     </v-content>
   </v-app>
 </template>
