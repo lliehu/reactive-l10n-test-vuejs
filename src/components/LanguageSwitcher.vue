@@ -1,7 +1,7 @@
 <template>
     <div>
-        <button @click="switchLanguageTo('fi')" :class="{ selected: language === 'fi'}">FI</button>
-        <button @click="switchLanguageTo('en')" :class="{ selected: language === 'en'}">EN</button>
+        <v-btn @click="switchLanguageTo('fi')" :class="{ selected: language === 'fi'}">FI</v-btn>
+        <v-btn @click="switchLanguageTo('en')" :class="{ selected: language === 'en'}">EN</v-btn>
     </div>
 </template>
 
@@ -27,14 +27,8 @@
 </script>
 
 <style scoped>
-    button {
-        background: white;
-        color: black;
-        border: 1px solid #333;
-        padding: 1em;
-    }
     .selected {
-        background: green;
-        color: white;
+        background: green !important;
+        color: white !important;
     }
 </style>
