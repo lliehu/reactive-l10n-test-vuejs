@@ -7,16 +7,16 @@
       {{ $t('language_automatic') }}
     </v-btn>
     <v-btn
-      v-for="languageCode in languageCodes"
-      v-bind:key="languageCode"
-      @click="switchLanguageTo(languageCode)"
+      v-for="language in languages"
+      v-bind:key="language.code"
+      @click="switchLanguageTo(language.code)"
       :color="
-        !!manuallySelectedLanguage && currentLanguage === languageCode
+        !!manuallySelectedLanguage && currentLanguage === language.code
           ? 'success'
           : ''
       "
     >
-      {{ languageCode.toUpperCase() }}
+      {{ language.nativeName }}
     </v-btn>
   </div>
 </template>
@@ -28,7 +28,16 @@ export default {
   name: 'LanguageSwitcher',
   data: function() {
     return {
-      languageCodes: ['en', 'fi']
+      languages: [
+        {
+          code: 'en',
+          nativeName: 'English'
+        },
+        {
+          code: 'fi',
+          nativeName: 'Suomi'
+        }
+      ]
     }
   },
   props: {},
