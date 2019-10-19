@@ -12,24 +12,24 @@
           <v-col cols="6">
             <v-card width="600px" class="mx-auto">
               <v-card-text>
-                <List/>
-                <CatCountInput/>
+                <List />
+                <CatCountInput />
               </v-card-text>
               <v-card-actions>
-                <TargetPronounChanger/>
-                <LanguageSwitcher/>
+                <TargetPronounChanger />
+                <LanguageSwitcher />
               </v-card-actions>
             </v-card>
           </v-col>
 
           <v-col cols="6">
-            <MessageLog/>
+            <MessageLog />
           </v-col>
 
           <v-col cols="12">
             <v-card>
               <v-card-text>
-                <Map/>
+                <Map />
               </v-card-text>
             </v-card>
           </v-col>
@@ -43,7 +43,7 @@
 import List from './components/List.vue'
 import TargetPronounChanger from './components/TargetPronounChanger.vue'
 import LanguageSwitcher from './components/LanguageSwitcher.vue'
-import CatCountInput from "@/components/CatCountInput";
+import CatCountInput from '@/components/CatCountInput'
 import Map from './components/Map.vue'
 import MessageLog from './components/MessageLog.vue'
 
@@ -59,9 +59,8 @@ export default {
   },
   data: () => ({
     //
-  }),
-};
+  })
+}
 </script>
 
-<style>
-</style>
+<style></style>

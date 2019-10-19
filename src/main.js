@@ -5,7 +5,7 @@ import i18next from 'i18next'
 import VueI18Next from '@panter/vue-i18next'
 
 import localeResources from '../locales'
-import vuetify from './plugins/vuetify';
+import vuetify from './plugins/vuetify'
 
 Vue.use(VueI18Next)
 
@@ -71,7 +71,6 @@ let vueApp = new Vue({
 
 function translateDocumentTitle() {
   document.title = i18next.t('app.name')
-  console.log('Translated title')
 }
 
 vueApp.$watch(translateDocumentTitle)
