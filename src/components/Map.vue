@@ -3,8 +3,18 @@
 </template>
 
 <script>
-import leaflet from 'leaflet';
-import '../../node_modules/leaflet/dist/leaflet.css';
+import leaflet from 'leaflet'
+import '../../node_modules/leaflet/dist/leaflet.css'
+
+import markerIcon from '../../node_modules/leaflet/dist/images/marker-icon.png'
+import markerRetinaIcon from '../../node_modules/leaflet/dist/images/marker-icon-2x.png'
+import shadowIcon from '../../node_modules/leaflet/dist/images/marker-shadow.png'
+
+leaflet.Icon.Default.imagePath = ' ' // Set image path to non-empty to prevent Leaflet from trying to auto-detect it and fail horribly.
+leaflet.Icon.Default.prototype.options.iconUrl = markerIcon
+leaflet.Icon.Default.prototype.options.iconRetinaUrl = markerRetinaIcon
+leaflet.Icon.Default.prototype.options.shadowUrl = shadowIcon
+leaflet.Icon.Default.prototype.options.shadowRetinaUrl = shadowIcon
 
 export default {
     name: 'Map',
