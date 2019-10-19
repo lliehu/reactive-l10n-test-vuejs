@@ -1,8 +1,11 @@
 <template>
     <div>
         <v-btn @click="switchLanguageToAuto()" :color="!!!manuallySelectedLanguage ? 'success' : ''">AUTO</v-btn>
-        <v-btn @click="switchLanguageTo('fi')" :color="!!manuallySelectedLanguage && language === 'fi' ? 'success' : ''">FI</v-btn>
-        <v-btn @click="switchLanguageTo('en')" :color="!!manuallySelectedLanguage && language === 'en' ? 'success' : ''">EN</v-btn>
+        <v-btn v-for="languageCode in languageCodes" v-bind:key="languageCode"
+        @click="switchLanguageTo(languageCode)"
+        :color="!!manuallySelectedLanguage && currentLanguage === languageCode ? 'success' : ''">
+        {{ languageCode.toUpperCase() }}
+        </v-btn>
     </div>
 </template>
 
@@ -11,6 +14,11 @@
 
     export default {
         name: 'LanguageSwitcher',
+        data: function () {
+            return {
+                languageCodes: ['en', 'fi']
+            }
+        },
         props: {
         },
         methods: {
@@ -24,7 +32,7 @@
             }
         },
         computed: {
-            language() {
+            currentLanguage() {
                 return this.$root.$data.language;
             },
             manuallySelectedLanguage() {
