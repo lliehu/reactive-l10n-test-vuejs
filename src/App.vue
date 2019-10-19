@@ -4,6 +4,8 @@
       <v-toolbar-title class="headline text-uppercase">
         {{ $t('app.name') }}
       </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <LanguageSwitcher />
     </v-app-bar>
 
     <v-content>
@@ -17,7 +19,6 @@
               </v-card-text>
               <v-card-actions>
                 <TargetPronounChanger />
-                <LanguageSwitcher />
               </v-card-actions>
             </v-card>
           </v-col>
