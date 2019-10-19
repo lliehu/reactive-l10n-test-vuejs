@@ -4,7 +4,7 @@
       @click="switchLanguageToAuto()"
       :color="!!!manuallySelectedLanguage ? 'success' : ''"
     >
-      AUTO
+      {{ $t('language_automatic') }}
     </v-btn>
     <v-btn
       v-for="languageCode in languageCodes"

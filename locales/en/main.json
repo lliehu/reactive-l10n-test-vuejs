@@ -21,6 +21,7 @@
         "map": {
             "zoomInTitle": "Zoom in",
             "zoomOutTitle": "Zoom out"
-        }
+        },
+        "language_automatic": "Auto"
     }
 }

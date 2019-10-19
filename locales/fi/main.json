@@ -21,6 +21,7 @@
         "map": {
             "zoomInTitle": "Lähennä",
             "zoomOutTitle": "Loitonna"
-        }
+        },
+        "language_automatic": "Autom."
     }
 }
