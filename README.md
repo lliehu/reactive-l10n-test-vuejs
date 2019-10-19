@@ -10,6 +10,9 @@
 * Be able to comment markers on the map.
   * Also write log messages about these actions.
 * Reactive retranslation when translation source changes.
+* Test with Locize
+  * https://locize.com/how-it-works.html
+  * https://www.youtube.com/watch?v=9NOzJhgmyQE (for React.js)
 
 ### Want to research
 
