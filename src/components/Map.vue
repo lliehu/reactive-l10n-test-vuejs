@@ -18,6 +18,11 @@ export default {
             this.$data.map = leaflet.map('map', {
                 zoomControl: false
             }).setView([61.45, 23.85], 12);
+            this.$data.map.on('click', event => {
+                let marker = L.marker(event.latlng)
+                marker.bindPopup(String(event.latlng))
+                marker.addTo(this.$data.map)
+            })
             
             this.tileLayer = leaflet.tileLayer(
                 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png',
