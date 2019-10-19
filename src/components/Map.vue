@@ -19,7 +19,7 @@ export default {
                 zoomControl: false
             }).setView([61.45, 23.85], 12);
             this.$data.map.on('click', event => {
-                let marker = L.marker(event.latlng)
+                let marker = leaflet.marker(event.latlng)
                 marker.bindPopup(String(event.latlng))
                 marker.addTo(this.$data.map)
             })
