@@ -4,9 +4,6 @@
 
 ### Need to code
 
-* Better store: https://vuejs.org/v2/guide/state-management.html#Simple-State-Management-from-Scratch
-  * Needed for further improvements. Need an interface for changing store. Actions? Mutations? For example in order to cleanly change language or write messages to the log.
-* Write to the message log when a marker is added to the map.
 * Be able to comment markers on the map.
   * Also write log messages about these actions.
 * Reactive retranslation when translation source changes.
