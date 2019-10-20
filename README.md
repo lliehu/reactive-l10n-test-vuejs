@@ -2,16 +2,16 @@
 
 ## TODO
 
-### Need to code
+### Need to code (MUST)
 
-* Be able to comment markers on the map.
-  * Also write log messages about these actions.
-* Reactive retranslation when translation source changes.
-* Test with Locize
-  * https://locize.com/how-it-works.html
-  * https://www.youtube.com/watch?v=9NOzJhgmyQE (for React.js)
+1. Reactive retranslation when translation source changes.
+2. Test with Locize
+    * https://locize.com/how-it-works.html
+    * https://www.youtube.com/watch?v=9NOzJhgmyQE (for React.js)
+3. Be able to comment markers on the map.
+    * Also write log messages about these actions.
 
-### Want to research
+### Want to research (WANT)
 
 * Do changes to translation files update automatically to the UI?
 * Look into the reason why translations are automatically updated in the UI when language changes.
@@ -19,9 +19,10 @@
 * How does vue integration for Leaflet (npm packages) deal with localization? Or do they at all?
 * Dialogs? What if someone used an error dialog and the user wanted to change the UI language before dismissing it?
 
-### Nice to have at some point
+### Nice to have at some point (NICE TO HAVE)
 
 * Test select component. There are usually some kind of problems with them.
+* Clean code up a bit and learn in the process.
 
 ## Project setup
 
