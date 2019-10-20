@@ -10,6 +10,8 @@
     * https://www.youtube.com/watch?v=9NOzJhgmyQE (for React.js)
 3. Be able to comment markers on the map.
     * Also write log messages about these actions.
+4. Test select component. There are usually some kind of problems with them. Especially its i18n.
+5. Test i18n of Vuetify (or another UI component library). Why? Because they are popular. I wonder if Vuetify was the right choice here after all. Hmm... Well, if it's ok, then I don't really want to change it anymore.
 
 ### Want to research (WANT)
 
@@ -21,7 +23,6 @@
 
 ### Nice to have at some point (NICE TO HAVE)
 
-* Test select component. There are usually some kind of problems with them.
 * Clean code up a bit and learn in the process.
 
 ## Project setup
