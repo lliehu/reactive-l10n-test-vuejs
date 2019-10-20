@@ -22,6 +22,9 @@
             "zoomInTitle": "Lähennä",
             "zoomOutTitle": "Loitonna"
         },
-        "language_automatic": "Autom."
+        "language_automatic": "Autom.",
+        "log_messages": {
+            "marker_added": "Merkki lisättiin kartalle kohtaan {{position}}."
+        }
     }
 }

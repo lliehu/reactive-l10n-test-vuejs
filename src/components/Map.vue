@@ -31,8 +31,11 @@ export default {
         })
         .setView([61.45, 23.85], 12)
       this.$data.map.on('click', event => {
+        this.$store.addLogMessage('log_messages.marker_added', {
+          position: event.latlng.toString()
+        })
         let marker = leaflet.marker(event.latlng)
-        marker.bindPopup(String(event.latlng))
+        marker.bindPopup(event.latlng.toString())
         marker.addTo(this.$data.map)
       })
 

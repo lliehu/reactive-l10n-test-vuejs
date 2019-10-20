@@ -22,6 +22,9 @@
             "zoomInTitle": "Zoom in",
             "zoomOutTitle": "Zoom out"
         },
-        "language_automatic": "Auto"
+        "language_automatic": "Auto",
+        "log_messages": {
+            "marker_added": "Marker was added to the map at {{position}}."
+        }
     }
 }

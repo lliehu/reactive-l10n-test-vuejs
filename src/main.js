@@ -19,23 +19,7 @@ const store = {
     // False e.g. when language is detected from navigator.language.
     manuallySelectedLanguage: false,
     messageLog: {
-      messageList: [
-        {
-          time: new Date(),
-          messageId: 'message_log.test_message',
-          parameters: {}
-        },
-        {
-          time: new Date(),
-          messageId: 'message_log.test_message',
-          parameters: {}
-        },
-        {
-          time: new Date(),
-          messageId: 'message_log.test_message',
-          parameters: {}
-        }
-      ]
+      messageList: []
     }
   },
   overrideUILanguageTo(languageCode) {
@@ -45,6 +29,13 @@ const store = {
   enableAutomaticUILanguage() {
     store.state.manuallySelectedLanguage = false
     i18next.changeLanguage(navigator.language)
+  },
+  addLogMessage(messageId, parameters = {}) {
+    store.state.messageLog.messageList.push({
+      time: new Date(),
+      messageId,
+      parameters
+    })
   }
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <v-card width="600px" class="mx-auto">
+  <v-card width="600px" height="300px" class="mx-auto">
     <v-card-title>{{ $t('message_log.title') }}</v-card-title>
     <v-card-text>
       <p v-for="(message, index) in messages" v-bind:key="index">
@@ -9,7 +9,7 @@
             timeStyle: 'medium'
           }).format(message.time)
         }}]
-        {{ $t(message.messageId) }}
+        {{ $t(message.messageId, message.parameters) }}
       </p>
     </v-card-text>
   </v-card>
