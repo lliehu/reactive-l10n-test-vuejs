@@ -37,8 +37,27 @@ const store = {
         }
       ]
     }
+  },
+  overrideUILanguageTo(languageCode) {
+    store.state.manuallySelectedLanguage = true
+    i18next.changeLanguage(languageCode)
+  },
+  enableAutomaticUILanguage() {
+    store.state.manuallySelectedLanguage = false
+    i18next.changeLanguage(navigator.language)
   }
 }
+
+const MyStorePlugin = {
+  install(Vue) {
+    Object.defineProperty(Vue.prototype, '$store', {
+      get() {
+        return store
+      }
+    })
+  }
+}
+Vue.use(MyStorePlugin)
 
 i18next.init({
   lng: store.state.language,

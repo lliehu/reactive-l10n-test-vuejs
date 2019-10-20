@@ -43,12 +43,10 @@ export default {
   props: {},
   methods: {
     switchLanguageTo(newLanguage = 'en') {
-      this.$root.$data.manuallySelectedLanguage = true
-      i18next.changeLanguage(newLanguage)
+      this.$root.$store.overrideUILanguageTo(newLanguage)
     },
     switchLanguageToAuto() {
-      this.$root.$data.manuallySelectedLanguage = false
-      i18next.changeLanguage(navigator.language)
+      this.$root.$store.enableAutomaticUILanguage()
     }
   },
   computed: {
