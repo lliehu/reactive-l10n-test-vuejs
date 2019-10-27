@@ -16,7 +16,6 @@
         "cat_count_label": "Kissojen määrä",
         "message_log": {
             "title": "Viestiloki",
-            "test_message": "Testataan, 1, 2, 3, testataan..."
         },
         "map": {
             "zoomInTitle": "Lähennä",
