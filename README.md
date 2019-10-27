@@ -5,6 +5,8 @@
 ### Need to code (MUST)
 
 1. Test with Locize
+    * In order to do this, a freee trial is needed. It's for only 14 days,
+      so needs careful timing.
     * https://locize.com/how-it-works.html
     * https://www.youtube.com/watch?v=9NOzJhgmyQE (for React.js)
 2. Be able to comment markers on the map.
