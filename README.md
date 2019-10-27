@@ -4,14 +4,13 @@
 
 ### Need to code (MUST)
 
-1. Reactive retranslation when translation source changes.
-2. Test with Locize
+1. Test with Locize
     * https://locize.com/how-it-works.html
     * https://www.youtube.com/watch?v=9NOzJhgmyQE (for React.js)
-3. Be able to comment markers on the map.
+2. Be able to comment markers on the map.
     * Also write log messages about these actions.
-4. Test select component. There are usually some kind of problems with them. Especially its i18n.
-5. Test i18n of Vuetify (or another UI component library). Why? Because they are popular. I wonder if Vuetify was the right choice here after all. Hmm... Well, if it's ok, then I don't really want to change it anymore.
+3. Test select component. There are usually some kind of problems with them. Especially its i18n.
+4. Test i18n of Vuetify (or another UI component library). Why? Because they are popular. I wonder if Vuetify was the right choice here after all. Hmm... Well, if it's ok, then I don't really want to change it anymore.
 
 ### Want to research (WANT)
 
@@ -40,6 +39,10 @@ For editing Vue.js code with Visual Studio Code, it is recommended to install th
 * Vetur
 * ESLint
 * Prettier - Code formatter
+
+## Features
+
+* Reactive retranslation when translation source changes. (When a string is changed inside store, it will cause the UI to update. Changes to json files will cause hot reload to reload the app.)
 
 ## Commands for use inside the Docker container
 
