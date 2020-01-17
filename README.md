@@ -2,19 +2,6 @@
 
 ## TODO
 
-### Need to code (MUST)
-
-1. Would it be easy to use a ready-made i18next component for choosing language based on user agent, allowing override?
-2. Test with Locize
-    * In order to do this, a freee trial is needed. It's for only 14 days,
-      so needs careful timing.
-    * https://locize.com/how-it-works.html
-    * https://www.youtube.com/watch?v=9NOzJhgmyQE (for React.js)
-3. Be able to comment markers on the map.
-    * Also write log messages about these actions.
-4. Test select component. There are usually some kind of problems with them. Especially its i18n.
-5. Test i18n of Vuetify (or another UI component library). Why? Because they are popular. I wonder if Vuetify was the right choice here after all. Hmm... Well, if it's ok, then I don't really want to change it anymore.
-
 ### Want to research (WANT)
 
 * Do changes to translation files update automatically to the UI?
