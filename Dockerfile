@@ -8,7 +8,7 @@ WORKDIR /opt/app
 RUN npm install -g @vue/cli@3.8.2
 
 COPY package.json package-lock.json* ./
-RUN npm cache clean --force && npm install
+RUN npm install
 
 # copy app source to image _after_ npm install so that
 # application code changes don't bust the docker cache of npm install step
