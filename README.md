@@ -1,5 +1,7 @@
 # Reactive i18n test application using Vue.js and i18next
 
+This is just an application for testing reactive internationalization, related to my Master's Thesis.
+
 ## TODO
 
 ### Want to research (WANT)
