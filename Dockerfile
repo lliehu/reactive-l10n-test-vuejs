@@ -5,7 +5,7 @@ FROM node:10
 # install dependencies
 WORKDIR /opt/app
 
-RUN npm install -g @vue/cli@3.8.2
+RUN npm install -g @vue/cli@4.1.2
 
 COPY package.json package-lock.json* ./
 RUN npm install
