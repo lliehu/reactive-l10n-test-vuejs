@@ -2,20 +2,6 @@
 
 This is just an application for testing reactive internationalization, related to my Master's Thesis.
 
-## TODO
-
-### Want to research (WANT)
-
-* Do changes to translation files update automatically to the UI?
-* Look into the reason why translations are automatically updated in the UI when language changes.
-* Look into how vue-i18next npm package handles reactive localization.
-* How does vue integration for Leaflet (npm packages) deal with localization? Or do they at all?
-* Dialogs? What if someone used an error dialog and the user wanted to change the UI language before dismissing it?
-
-### Nice to have at some point (NICE TO HAVE)
-
-* Clean code up a bit and learn in the process.
-
 ## Project setup
 
 ```
