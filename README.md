@@ -21,6 +21,10 @@ For editing Vue.js code with Visual Studio Code, it is recommended to install th
 ## Features
 
 * Reactive retranslation when translation source changes. (When a string is changed inside store, it will cause the UI to update. Changes to json files will cause hot reload to reload the app.)
+* Language switcher (automatic language switch on user agent language change)
+* Message log where the language of all messages can be changed retrospectively
+* Map (Leaflet integration) with localized UI controls
+* Ability to add markers to the map (log message is generated)
 
 ## Commands for use inside the Docker container
 
