@@ -1,7 +1,7 @@
 {
     "translation": {
         "app": {
-            "name": "Vue.js Reactive I18n test"
+            "name": "Vue.js Reactive localization test"
         },
         "testString": "Test string",
         "cat_count": "Only {{count}} cat plotting to kill them.",

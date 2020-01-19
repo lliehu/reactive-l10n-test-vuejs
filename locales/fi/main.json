@@ -1,7 +1,7 @@
 {
     "translation": {
         "app": {
-            "name": "Reaktiivinen internationalisointitesti Vue.js:llä"
+            "name": "Reaktiivinen lokalisointitesti Vue.js:llä"
         },
         "testString": "Testimerkkijono",
         "cat_count": "Vain yksi {{count}} kissa juonii hänen tappamista.",
