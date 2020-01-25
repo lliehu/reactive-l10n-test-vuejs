@@ -6,8 +6,12 @@
         <p v-for="(message, index) in messages" v-bind:key="index">
           [{{
             new Intl.DateTimeFormat(language, {
-              dateStyle: 'medium',
-              timeStyle: 'medium'
+              year: 'numeric',
+              month: 'numeric',
+              day: 'numeric',
+              hour: 'numeric',
+              minute: 'numeric',
+              second: 'numeric'
             }).format(message.time)
           }}]
           {{ $t(message.messageId, message.parameters) }}
