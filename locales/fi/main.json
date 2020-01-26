@@ -21,6 +21,8 @@
             "zoomInTitle": "Lähennä",
             "zoomOutTitle": "Loitonna"
         },
+        "navigate_map_to_label": "Siirry kartalla kohteeseen",
+        "navigate_map_button": "Siirry",
         "language_automatic": "Autom.",
         "log_messages": {
             "marker_added": "Merkki lisättiin kartalle kohtaan {{position}}."

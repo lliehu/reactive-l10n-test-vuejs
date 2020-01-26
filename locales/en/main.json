@@ -21,6 +21,8 @@
             "zoomInTitle": "Zoom in",
             "zoomOutTitle": "Zoom out"
         },
+        "navigate_map_to_label": "Navigate map to",
+        "navigate_map_button": "Navigate",
         "language_automatic": "Auto",
         "log_messages": {
             "marker_added": "Marker was added to the map at {{position}}."

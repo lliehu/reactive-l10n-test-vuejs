@@ -21,6 +21,7 @@
                 <TargetPronounChanger />
               </v-card-actions>
             </v-card>
+            <MapNavigator @navigate-map="navigateMap" />
           </v-col>
 
           <v-col cols="6">
@@ -30,7 +31,7 @@
           <v-col cols="12">
             <v-card>
               <v-card-text>
-                <Map />
+                <Map :bus="mapBus" />
               </v-card-text>
             </v-card>
           </v-col>
@@ -41,11 +42,13 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import List from './components/List.vue'
 import TargetPronounChanger from './components/TargetPronounChanger.vue'
 import LanguageSwitcher from './components/LanguageSwitcher.vue'
 import CatCountInput from '@/components/CatCountInput'
 import Map from './components/Map.vue'
+import MapNavigator from './components/MapNavigator'
 import MessageLog from './components/MessageLog.vue'
 
 export default {
@@ -56,11 +59,19 @@ export default {
     TargetPronounChanger,
     LanguageSwitcher,
     Map,
+    MapNavigator,
     MessageLog
   },
   data: () => ({
-    //
-  })
+    mapBus: new Vue()
+  }),
+  methods: {
+    navigateMap(position) {
+      this.mapBus.$emit('fly-to', {
+        latlng: position
+      })
+    }
+  }
 }
 </script>
 

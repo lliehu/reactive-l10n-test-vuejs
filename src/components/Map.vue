@@ -23,6 +23,12 @@ export default {
       map: null
     }
   },
+  created: function() {
+    this.bus.$on('fly-to', args => {
+      this.$data.map.flyTo(args.latlng)
+    })
+  },
+  props: ['bus'], // TODO how to update map position when this changes
   methods: {
     initMap() {
       this.$data.map = leaflet
