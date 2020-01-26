@@ -3,7 +3,7 @@ services:
   app:
     build: .
     ports:
-      - "1337:80" # host:container
+      - "3000:80" # host:container
     volumes:
       - .:/opt/app
       # Hack for excluding node_modules
