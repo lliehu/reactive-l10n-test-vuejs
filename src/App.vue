@@ -12,16 +12,24 @@
       <v-container>
         <v-row>
           <v-col cols="6">
-            <v-card width="600px" class="mx-auto">
-              <v-card-text>
-                <List />
-                <CatCountInput />
-              </v-card-text>
-              <v-card-actions>
-                <TargetPronounChanger />
-              </v-card-actions>
-            </v-card>
-            <MapNavigator @navigate-map="navigateMap" />
+            <v-container>
+              <v-row>
+                <v-col cols="12">
+                  <v-card width="600px" class="mx-auto">
+                    <v-card-text>
+                      <List />
+                      <CatCountInput />
+                    </v-card-text>
+                    <v-card-actions>
+                      <TargetPronounChanger />
+                    </v-card-actions>
+                  </v-card>
+                </v-col>
+                <v-col cols="12">
+                  <MapNavigator @navigate-map="navigateMap" />
+                </v-col>
+              </v-row>
+            </v-container>
           </v-col>
 
           <v-col cols="6">
