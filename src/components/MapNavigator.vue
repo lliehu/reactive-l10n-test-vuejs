@@ -7,6 +7,7 @@
         :items="items"
         item-text="name"
         item-value="coordinates"
+        :no-data-text="$t('no_places_message')"
       />
     </v-card-text>
     <v-card-actions>
