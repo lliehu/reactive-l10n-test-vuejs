@@ -85,3 +85,8 @@ function translateDocumentTitle() {
 
 vueApp.$watch(translateDocumentTitle)
 i18next.on('languageChanged', translateDocumentTitle)
+
+function updateVuetifyLanguage() {
+  vueApp.$vuetify.lang.current = store.state.language.substring(0, 2)
+}
+i18next.on('languageChanged', updateVuetifyLanguage)
