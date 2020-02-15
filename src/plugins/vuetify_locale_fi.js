@@ -8,8 +8,10 @@ export default {
   dataTable: {
     itemsPerPageText: 'Rivejä sivulla:',
     ariaLabel: {
-      sortDescending: ': Järjestetty laskevasti. Poista järjestäminen aktivoimalla.',
-      sortAscending: ': Järjestetty nousevasti. Järjestä laskevasti aktivoimalla.',
+      sortDescending:
+       ': Järjestetty laskevasti. Poista järjestäminen aktivoimalla.',
+      sortAscending:
+       ': Järjestetty nousevasti. Järjestä laskevasti aktivoimalla.',
       sortNone: ': Ei järjestetty. Järjestä nousevasti aktivoimalla.'
     },
     sortBy: 'Järjestä'
@@ -32,10 +34,10 @@ export default {
     next: 'Seuraava kuva',
     ariaLabel: {
       delimiter: 'Karusellin kuva {0}/{1}'
-    },
+    }
   },
   calendar: {
-    moreEvents: '{0} lisää',
+    moreEvents: '{0} lisää'
   },
   fileInput: {
     counter: '{0} tiedostoa',
@@ -44,5 +46,5 @@ export default {
   timePicker: {
     am: 'ap.',
     pm: 'ip.'
-  },
+  }
 }
