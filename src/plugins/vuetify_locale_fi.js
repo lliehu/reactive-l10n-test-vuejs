@@ -3,16 +3,16 @@ export default {
   close: 'Sulje',
   dataIterator: {
     noResultsText: 'Ei osumia',
-    loadingText: 'Ladataan kohteita...',
+    loadingText: 'Ladataan kohteita...'
   },
   dataTable: {
     itemsPerPageText: 'Rivejä sivulla:',
     ariaLabel: {
       sortDescending: ': Järjestetty laskevasti. Poista järjestäminen aktivoimalla.',
       sortAscending: ': Järjestetty nousevasti. Järjestä laskevasti aktivoimalla.',
-      sortNone: ': Ei järjestetty. Järjestä nousevasti aktivoimalla.',
+      sortNone: ': Ei järjestetty. Järjestä nousevasti aktivoimalla.'
     },
-    sortBy: 'Järjestä',
+    sortBy: 'Järjestä'
   },
   dataFooter: {
     itemsPerPageText: 'Kohteita sivulla:',
@@ -21,17 +21,17 @@ export default {
     prevPage: 'Edellinen sivu',
     firstPage: 'Ensimmäinen sivu',
     lastPage: 'Viimeinen sivu',
-    pageText: '{0}-{1} ({2})',
+    pageText: '{0}-{1} ({2})'
   },
   datePicker: {
-    itemsSelected: '{0} valittu',
+    itemsSelected: '{0} valittu'
   },
   noDataText: 'Ei dataa',
   carousel: {
     prev: 'Edellinen kuva',
     next: 'Seuraava kuva',
     ariaLabel: {
-      delimiter: 'Karusellin kuva {0}/{1}',
+      delimiter: 'Karusellin kuva {0}/{1}'
     },
   },
   calendar: {
@@ -39,10 +39,10 @@ export default {
   },
   fileInput: {
     counter: '{0} tiedostoa',
-    counterSize: '{0} tiedostoa ({1} yhteensä)',
+    counterSize: '{0} tiedostoa ({1} yhteensä)'
   },
   timePicker: {
     am: 'ap.',
-    pm: 'ip.',
+    pm: 'ip.'
   },
 }
