@@ -9,9 +9,9 @@ export default {
     itemsPerPageText: 'Rivejä sivulla:',
     ariaLabel: {
       sortDescending:
-       ': Järjestetty laskevasti. Poista järjestäminen aktivoimalla.',
+        ': Järjestetty laskevasti. Poista järjestäminen aktivoimalla.',
       sortAscending:
-       ': Järjestetty nousevasti. Järjestä laskevasti aktivoimalla.',
+        ': Järjestetty nousevasti. Järjestä laskevasti aktivoimalla.',
       sortNone: ': Ei järjestetty. Järjestä nousevasti aktivoimalla.'
     },
     sortBy: 'Järjestä'
