@@ -1,14 +1,47 @@
 <template>
-  <div id="map"></div>
+  <div id="map">
+    <l-map
+      :center="center"
+      :zoom="12"
+      :options="{ zoomControl: false }"
+      @click="addMarker"
+    >
+      <l-tile-layer
+        url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png"
+        attribution="&copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>, &copy; <a href='https://carto.com/attribution'>CARTO</a>"
+        maxZoom="18"
+      />
+      <l-control-zoom
+        :key="$t('map.zoomInTitle') + $t('map.zoomOutTitle')"
+        :zoomInTitle="$t('map.zoomInTitle')"
+        :zoomOutTitle="$t('map.zoomOutTitle')"
+      />
+      <l-marker v-for="marker in markerList" :key="marker" :lat-lng="marker">
+        <l-popup>
+          <v-btn>{{ $t('add_new_comment_button') }}</v-btn>
+        </l-popup>
+      </l-marker>
+    </l-map>
+  </div>
 </template>
 
 <script>
+import Vue from 'vue'
+
 import leaflet from 'leaflet'
 import '../../node_modules/leaflet/dist/leaflet.css'
 
 import markerIcon from '../../node_modules/leaflet/dist/images/marker-icon.png'
 import markerRetinaIcon from '../../node_modules/leaflet/dist/images/marker-icon-2x.png'
 import shadowIcon from '../../node_modules/leaflet/dist/images/marker-shadow.png'
+
+import { LControlZoom, LMap, LMarker, LPopup, LTileLayer } from 'vue2-leaflet'
+
+Vue.component('l-map', LMap)
+Vue.component('l-tile-layer', LTileLayer)
+Vue.component('l-marker', LMarker)
+Vue.component('l-popup', LPopup)
+Vue.component('l-control-zoom', LControlZoom)
 
 leaflet.Icon.Default.imagePath = ' ' // Set image path to non-empty to prevent Leaflet from trying to auto-detect it and fail horribly.
 leaflet.Icon.Default.prototype.options.iconUrl = markerIcon
@@ -20,71 +53,23 @@ export default {
   name: 'Map',
   data: function() {
     return {
-      map: null
+      center: [61.45, 23.85],
+      markerList: []
     }
   },
   created: function() {
     this.bus.$on('fly-to', args => {
-      this.$data.map.flyTo(args.latlng)
+      this.$data.center = args.latlng
     })
   },
   props: ['bus'], // TODO how to update map position when this changes
   methods: {
-    initMap() {
-      this.$data.map = leaflet
-        .map('map', {
-          zoomControl: false
-        })
-        .setView([61.45, 23.85], 12)
-      this.$data.map.on('click', event => {
-        this.$store.addLogMessage('log_messages.marker_added', {
-          position: event.latlng.toString()
-        })
-        let marker = leaflet.marker(event.latlng)
-        marker.bindPopup(event.latlng.toString())
-        marker.addTo(this.$data.map)
+    addMarker(event) {
+      this.$store.addLogMessage('log_messages.marker_added', {
+        position: event.latlng.toString()
       })
-
-      this.tileLayer = leaflet.tileLayer(
-        'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png',
-        {
-          maxZoom: 18,
-          attribution:
-            '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
-        }
-      )
-      this.tileLayer.addTo(this.$data.map)
-    },
-    initZoomControl() {
-      // This probably only works if translations objects
-      // are made reactive by Vue.js.
-      let zoomInTitle = this.$i18n.i18next.t('map.zoomInTitle')
-      let zoomOutTitle = this.$i18n.i18next.t('map.zoomOutTitle')
-
-      if (this.$data.zoomControl) {
-        let currentOptions = this.$data.zoomControl.options
-        if (
-          currentOptions.zoomInTitle === zoomInTitle &&
-          currentOptions.zoomOutTitle === zoomOutTitle
-        ) {
-          return
-        }
-        this.$data.zoomControl.remove()
-        this.$data.zoomControl = null
-      }
-      this.$data.zoomControl = leaflet.control.zoom({
-        zoomInTitle,
-        zoomOutTitle
-      })
-      this.$data.zoomControl.addTo(this.$data.map)
+      this.$data.markerList.push(event.latlng)
     }
-  },
-  mounted() {
-    this.initMap()
-    this.$watch(this.initZoomControl)
-    // TODO Is this really needed? Can I find some way so tha
-    // this is not needed? Think about it.
-    this.$i18n.i18next.on('languageChanged', this.initZoomControl)
   }
 }
 </script>

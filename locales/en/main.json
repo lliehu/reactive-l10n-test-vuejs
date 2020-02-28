@@ -27,6 +27,7 @@
         "language_automatic": "Auto",
         "log_messages": {
             "marker_added": "Marker was added to the map at {{position}}."
-        }
+        },
+        "add_new_comment_button": "Add new comment"
     }
 }

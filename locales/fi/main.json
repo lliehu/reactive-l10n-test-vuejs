@@ -27,6 +27,7 @@
         "language_automatic": "Autom.",
         "log_messages": {
             "marker_added": "Merkki lisättiin kartalle kohtaan {{position}}."
-        }
+        },
+        "add_new_comment_button": "Lisää uusi kommentti"
     }
 }
