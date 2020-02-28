@@ -1,6 +1,7 @@
 <template>
   <div id="map">
     <l-map
+      style="z-index: 0"
       :center="center"
       :zoom="12"
       :options="{ zoomControl: false }"
