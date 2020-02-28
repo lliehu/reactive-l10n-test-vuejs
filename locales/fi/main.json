@@ -30,6 +30,7 @@
         },
         "add_new_comment_button": "Lisää uusi kommentti",
         "add_new_comment_title": "Uuden kommentin lisääminen",
-        "cancel_button": "Peru"
+        "cancel_button": "Peru",
+        "comment_prefix": "Joku kommentoi {{time}}:"
     }
 }

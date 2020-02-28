@@ -19,7 +19,28 @@
       />
       <l-marker v-for="marker in markerList" :key="marker" :lat-lng="marker">
         <l-popup>
-          <v-btn @click="openDialog">{{ $t('add_new_comment_button') }}</v-btn>
+          <p
+            v-for="(comment, index) in markerComments[marker]"
+            v-bind:key="index"
+          >
+            {{
+              $t('comment_prefix', {
+                time: new Intl.DateTimeFormat(language, {
+                  year: 'numeric',
+                  month: 'numeric',
+                  day: 'numeric',
+                  hour: 'numeric',
+                  minute: 'numeric',
+                  second: 'numeric'
+                }).format(comment.time)
+              })
+            }}
+            <br />
+            {{ comment.text }}
+          </p>
+          <v-btn @click="() => openDialog(marker)">
+            {{ $t('add_new_comment_button') }}
+          </v-btn>
         </l-popup>
       </l-marker>
     </l-map>
@@ -28,10 +49,12 @@
         <v-card-title class="headline">
           {{ $t('add_new_comment_title') }}
         </v-card-title>
-        <v-card-text></v-card-text>
+        <v-card-text>
+          <v-textarea v-model="newCommentText" />
+        </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn @click="dialogOpen = false">
+          <v-btn @click="addComment">
             {{ $t('add_new_comment_button') }}
           </v-btn>
 
@@ -74,7 +97,15 @@ export default {
     return {
       center: [61.45, 23.85],
       markerList: [],
-      dialogOpen: false
+      markerComments: {},
+      dialogOpen: false,
+      newCommentText: '',
+      selectedMarker: null
+    }
+  },
+  computed: {
+    language() {
+      return this.$root.$data.language
     }
   },
   created: function() {
@@ -90,8 +121,24 @@ export default {
       })
       this.$data.markerList.push(event.latlng)
     },
-    openDialog() {
+    openDialog(marker) {
+      this.$data.selectedMarker = marker
+      this.$data.newCommentText = ''
       this.$data.dialogOpen = true
+    },
+    addComment() {
+      const marker = this.$data.selectedMarker
+      const markerComments = this.$data.markerComments
+      if (marker) {
+        if (!markerComments[marker]) {
+          markerComments[marker] = []
+        }
+        markerComments[marker].push({
+          text: this.$data.newCommentText,
+          time: new Date()
+        })
+      }
+      this.$data.dialogOpen = false
     }
   }
 }
