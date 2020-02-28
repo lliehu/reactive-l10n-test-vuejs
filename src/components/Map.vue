@@ -18,10 +18,28 @@
       />
       <l-marker v-for="marker in markerList" :key="marker" :lat-lng="marker">
         <l-popup>
-          <v-btn>{{ $t('add_new_comment_button') }}</v-btn>
+          <v-btn @click="openDialog">{{ $t('add_new_comment_button') }}</v-btn>
         </l-popup>
       </l-marker>
     </l-map>
+    <v-dialog v-model="dialogOpen">
+      <v-card>
+        <v-card-title class="headline">
+          {{ $t('add_new_comment_title') }}
+        </v-card-title>
+        <v-card-text></v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn @click="dialogOpen = false">
+            {{ $t('add_new_comment_button') }}
+          </v-btn>
+
+          <v-btn @click="dialogOpen = false">
+            {{ $t('cancel_button') }}
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </div>
 </template>
 
@@ -54,7 +72,8 @@ export default {
   data: function() {
     return {
       center: [61.45, 23.85],
-      markerList: []
+      markerList: [],
+      dialogOpen: false
     }
   },
   created: function() {
@@ -69,6 +88,9 @@ export default {
         position: event.latlng.toString()
       })
       this.$data.markerList.push(event.latlng)
+    },
+    openDialog() {
+      this.$data.dialogOpen = true
     }
   }
 }
