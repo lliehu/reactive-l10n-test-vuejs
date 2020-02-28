@@ -29,7 +29,7 @@
             "marker_added": "Merkki lisättiin kartalle kohtaan {{position}}."
         },
         "add_new_comment_button": "Lisää uusi kommentti",
-        "add_new_comment_title": "Lisää uusi kommentti",
+        "add_new_comment_title": "Uuden kommentin lisääminen",
         "cancel_button": "Peru"
     }
 }
