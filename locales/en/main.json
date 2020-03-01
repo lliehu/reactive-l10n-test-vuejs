@@ -24,7 +24,7 @@
         "no_places_message": "No places",
         "navigate_map_to_label": "Navigate map to",
         "navigate_map_button": "Navigate",
-        "language_automatic": "Auto",
+        "language_automatic": "Automatic",
         "log_messages": {
             "marker_added": "Marker was added to the map at {{position}}."
         },
