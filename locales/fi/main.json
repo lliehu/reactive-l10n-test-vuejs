@@ -31,6 +31,10 @@
         "add_new_comment_button": "Lisää uusi kommentti",
         "add_new_comment_title": "Uuden kommentin lisääminen",
         "cancel_button": "Peru",
-        "comment_prefix": "Joku kommentoi {{time}}:"
+        "comment_prefix": "Joku kommentoi {{time}}:",
+        "alert_test": {
+            "button": "Testaa alert()",
+            "message": "Tämä on viesti, jolla testataan viestin lokalisointia alert()-funktiossa."
+        }
     }
 }

@@ -21,6 +21,9 @@
                       <CatCountInput />
                     </v-card-text>
                     <v-card-actions>
+                      <v-btn color="light-green" @click="testAlert">
+                        {{ $t('alert_test.button') }}
+                      </v-btn>
                       <TargetPronounChanger />
                     </v-card-actions>
                   </v-card>
@@ -78,6 +81,9 @@ export default {
       this.mapBus.$emit('fly-to', {
         latlng: position
       })
+    },
+    testAlert() {
+      alert(this.$i18n.i18next.t('alert_test.message'))
     }
   }
 }
