@@ -9,6 +9,8 @@ import vuetify from './plugins/vuetify'
 
 Vue.use(VueI18Next)
 
+window.localeResources = localeResources
+
 const store = {
   state: {
     gender: 'female',
