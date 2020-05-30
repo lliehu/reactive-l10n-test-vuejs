@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import i18next from 'i18next'
+import Locize from 'i18next-locize-backend'
 import VueI18Next from '@panter/vue-i18next'
 
 import localeResources from '../locales'
@@ -52,9 +53,15 @@ const MyStorePlugin = {
 }
 Vue.use(MyStorePlugin)
 
-i18next.init({
+i18next.use(Locize).init({
   lng: store.state.language,
-  resources: localeResources
+  resources: localeResources,
+  fallbackLng: 'en',
+  backend: {
+    referenceLng: 'en',
+    projectId: process.env.VUE_APP_LOCIZE_PROJECT_ID,
+    apiKey: process.env.VUE_APP_LOCIZE_API_KEY
+  }
 })
 
 i18next.on('languageChanged', function(lng) {
