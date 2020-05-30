@@ -57,6 +57,9 @@ i18next.use(Locize).init({
   lng: store.state.language,
   resources: localeResources,
   fallbackLng: 'en',
+
+  // For setting environment variables, see:
+  // https://cli.vuejs.org/guide/mode-and-env.html#environment-variables
   backend: {
     referenceLng: 'en',
     projectId: process.env.VUE_APP_LOCIZE_PROJECT_ID,
