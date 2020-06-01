@@ -72,6 +72,7 @@ i18next
 
     editor: {
       enabled: true
+      // TODO add onEditorSaved handler
     }
   })
 
