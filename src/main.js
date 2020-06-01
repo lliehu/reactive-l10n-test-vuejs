@@ -68,6 +68,10 @@ i18next
       referenceLng: 'en',
       projectId: process.env.VUE_APP_LOCIZE_PROJECT_ID,
       apiKey: process.env.VUE_APP_LOCIZE_API_KEY
+    },
+
+    editor: {
+      enabled: true
     }
   })
 
