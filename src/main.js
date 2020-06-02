@@ -54,12 +54,15 @@ const MyStorePlugin = {
 }
 Vue.use(MyStorePlugin)
 
+const USE_TRANSLATIONS_FROM_LOCIZE = true
+
 i18next
   .use(Locize)
   .use(locizeEditor)
   .init({
+    debug: true,
     lng: store.state.language,
-    resources: localeResources,
+    resources: USE_TRANSLATIONS_FROM_LOCIZE ? null : localeResources,
     fallbackLng: 'en',
 
     // For setting environment variables, see:
@@ -71,8 +74,10 @@ i18next
     },
 
     editor: {
-      enabled: true
-      // TODO add onEditorSaved handler
+      enabled: USE_TRANSLATIONS_FROM_LOCIZE,
+      onEditorSaved: function(lng, ns) {
+        i18next.reloadResources(lng, ns)
+      }
     }
   })
 
