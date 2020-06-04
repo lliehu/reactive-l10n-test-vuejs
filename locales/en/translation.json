@@ -1,0 +1,37 @@
+{
+    "app": {
+        "name": "Vue.js Reactive localization test"
+    },
+    "cat_count": "Only {{count}} cat plotting to kill them.",
+    "cat_count_plural":"{{count}} cats plotting to kill them.",
+    "cat_count_female":"Only {{count}} cat plotting to kill her.",
+    "cat_count_female_plural":"{{count}} cats plotting to kill her.",
+    "cat_count_male":"Only {{count}} cat plotting to kill him.",
+    "cat_count_male_plural":"{{count}} cats plotting to kill him.",
+    "gendered_pronoun_object":"them",
+    "gendered_pronoun_object_female":"her",
+    "gendered_pronoun_object_male":"him",
+    "cat_count_label":"Cat count",
+    "message_log": {
+        "title":"Message log"
+    },
+    "map": {
+        "zoomInTitle": "Zoom in",
+        "zoomOutTitle": "Zoom out"
+    },
+    "no_places_message": "No places",
+    "navigate_map_to_label": "Navigate map to",
+    "navigate_map_button": "Navigate",
+    "language_automatic": "Automatic",
+    "log_messages": {
+        "marker_added": "Marker was added to the map at {{position}}."
+    },
+    "add_new_comment_button": "Add new comment",
+    "add_new_comment_title": "Add new comment",
+    "cancel_button": "Cancel",
+    "comment_prefix": "Someone commented {{time}}:",
+    "alert_test": {
+        "button": "Test alert()",
+        "message": "This is message for testing localization of a message in alert()."
+    }
+}

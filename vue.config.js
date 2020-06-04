@@ -4,7 +4,10 @@ module.exports = {
       rules: [
         {
           test: /locales/,
-          loader: '@alienfast/i18next-loader'
+          loader: '@alienfast/i18next-loader',
+          query: {
+            basenameAsNamespace: true
+          }
         }
       ]
     }
