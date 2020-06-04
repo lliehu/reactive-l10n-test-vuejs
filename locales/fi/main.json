@@ -3,7 +3,6 @@
         "app": {
             "name": "Reaktiivinen lokalisointitesti Vue.js:llä"
         },
-        "testString": "Testimerkkijono",
         "cat_count": "Vain yksi {{count}} kissa juonii hänen tappamista.",
         "cat_count_plural": "{{count}} kissaa juonii hänen tappamista.",
         "cat_count_female": "Vain yksi {{count}} kissa juonii hänen tappamista.",

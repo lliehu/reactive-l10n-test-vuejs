@@ -3,7 +3,6 @@
         "app": {
             "name": "Vue.js Reactive localization test"
         },
-        "testString": "Test string",
         "cat_count": "Only {{count}} cat plotting to kill them.",
         "cat_count_plural":"{{count}} cats plotting to kill them.",
         "cat_count_female":"Only {{count}} cat plotting to kill her.",
