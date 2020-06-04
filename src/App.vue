@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app>
+    <v-app-bar>
       <v-toolbar-title class="headline text-uppercase">
         {{ $t('app.name') }}
       </v-toolbar-title>
