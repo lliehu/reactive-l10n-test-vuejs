@@ -1,0 +1,37 @@
+{
+    "app": {
+        "name": "crwdns2:0crwdne2:0"
+    },
+    "cat_count": "crwdns4:0{{count}}crwdne4:0",
+    "cat_count_plural": "crwdns6:0{{count}}crwdne6:0",
+    "cat_count_female": "crwdns8:0{{count}}crwdne8:0",
+    "cat_count_female_plural": "crwdns10:0{{count}}crwdne10:0",
+    "cat_count_male": "crwdns12:0{{count}}crwdne12:0",
+    "cat_count_male_plural": "crwdns14:0{{count}}crwdne14:0",
+    "gendered_pronoun_object": "crwdns16:0crwdne16:0",
+    "gendered_pronoun_object_female": "crwdns18:0crwdne18:0",
+    "gendered_pronoun_object_male": "crwdns20:0crwdne20:0",
+    "cat_count_label": "crwdns22:0crwdne22:0",
+    "message_log": {
+        "title": "crwdns24:0crwdne24:0"
+    },
+    "map": {
+        "zoomInTitle": "crwdns26:0crwdne26:0",
+        "zoomOutTitle": "crwdns28:0crwdne28:0"
+    },
+    "no_places_message": "crwdns30:0crwdne30:0",
+    "navigate_map_to_label": "crwdns32:0crwdne32:0",
+    "navigate_map_button": "crwdns34:0crwdne34:0",
+    "language_automatic": "crwdns36:0crwdne36:0",
+    "log_messages": {
+        "marker_added": "crwdns38:0{{position}}crwdne38:0"
+    },
+    "add_new_comment_button": "crwdns40:0crwdne40:0",
+    "add_new_comment_title": "crwdns42:0crwdne42:0",
+    "cancel_button": "crwdns44:0crwdne44:0",
+    "comment_prefix": "crwdns46:0{{time}}crwdne46:0",
+    "alert_test": {
+        "button": "crwdns48:0crwdne48:0",
+        "message": "crwdns50:0crwdne50:0"
+    }
+}

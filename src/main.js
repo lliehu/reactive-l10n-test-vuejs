@@ -54,7 +54,7 @@ const MyStorePlugin = {
 }
 Vue.use(MyStorePlugin)
 
-const USE_TRANSLATIONS_FROM_LOCIZE = true
+const USE_TRANSLATIONS_FROM_LOCIZE = false
 
 i18next
   .use(Locize)
