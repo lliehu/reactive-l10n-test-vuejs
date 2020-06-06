@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib'
 import fi from './vuetify_locale_fi'
+import i18next from 'i18next'
 
 Vue.use(Vuetify)
 
@@ -9,7 +10,8 @@ export default new Vuetify({
     iconfont: 'mdi'
   },
   lang: {
-    current: 'fi', // How to change language in a reactive manner?
-    locales: { fi }
+    current: 'fi', // This is updated in main.js. See updateVuetifyLanguage().
+    locales: { fi },
+    t: (key, ...params) => i18next.t(key, params)
   }
 })
