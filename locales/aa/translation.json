@@ -33,5 +33,53 @@
     "alert_test": {
         "button": "crwdns48:0crwdne48:0",
         "message": "crwdns50:0crwdne50:0"
+    },
+    "$vuetify": {
+        "badge": "crwdns52:0crwdne52:0",
+        "close": "crwdns54:0crwdne54:0",
+        "dataIterator": {
+            "noResultsText": "crwdns56:0crwdne56:0",
+            "loadingText": "crwdns58:0crwdne58:0"
+        },
+        "dataTable": {
+            "itemsPerPageText": "crwdns60:0crwdne60:0",
+            "ariaLabel": {
+                "sortDescending": "crwdns62:0crwdne62:0",
+                "sortAscending": "crwdns64:0crwdne64:0",
+                "sortNone": "crwdns66:0crwdne66:0"
+            },
+            "sortBy": "crwdns68:0crwdne68:0"
+        },
+        "dataFooter": {
+            "itemsPerPageText": "crwdns70:0crwdne70:0",
+            "itemsPerPageAll": "crwdns72:0crwdne72:0",
+            "nextPage": "crwdns74:0crwdne74:0",
+            "prevPage": "crwdns76:0crwdne76:0",
+            "firstPage": "crwdns78:0crwdne78:0",
+            "lastPage": "crwdns80:0crwdne80:0",
+            "pageText": "crwdns82:0{{0}}crwdnd82:0{{1}}crwdnd82:0{{2}}crwdne82:0"
+        },
+        "datePicker": {
+            "itemsSelected": "crwdns84:0{{0}}crwdne84:0"
+        },
+        "noDataText": "crwdns86:0crwdne86:0",
+        "carousel": {
+            "prev": "crwdns88:0crwdne88:0",
+            "next": "crwdns90:0crwdne90:0",
+            "ariaLabel": {
+                "delimiter": "crwdns92:0{{0}}crwdnd92:0{{1}}crwdne92:0"
+            }
+        },
+        "calendar": {
+            "moreEvents": "crwdns94:0{{0}}crwdne94:0"
+        },
+        "fileInput": {
+            "counter": "crwdns96:0{{0}}crwdne96:0",
+            "counterSize": "crwdns98:0{{0}}crwdnd98:0{{1}}crwdne98:0"
+        },
+        "timePicker": {
+            "am": "crwdns100:0crwdne100:0",
+            "pm": "crwdns102:0crwdne102:0"
+        }
     }
 }
