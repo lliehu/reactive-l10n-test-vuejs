@@ -2,6 +2,7 @@
   <v-card width="600px" class="mx-auto">
     <v-card-text>
       {{ $t('navigate_map_to_label') }}
+      {/* Commenting attribute `no-data-text` allows to test localization of Vuetify. */}
       <v-autocomplete
         v-model="selectedPlace"
         :items="items"
