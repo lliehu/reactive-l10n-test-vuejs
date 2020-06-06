@@ -18,8 +18,12 @@
                   <v-card width="600px" class="mx-auto">
                     <v-card-text>
                       <v-carousel height="10em">
-                        <v-carousel-item><v-sheet color="purple" height="100%">☆☆☆☆☆</v-sheet></v-carousel-item>
-                        <v-carousel-item><v-sheet color="green" height="100%">★★★★★</v-sheet></v-carousel-item>
+                        <v-carousel-item>
+                          <v-sheet color="purple" height="100%">☆☆☆☆☆</v-sheet>
+                        </v-carousel-item>
+                        <v-carousel-item>
+                          <v-sheet color="green" height="100%">★★★★★</v-sheet>
+                        </v-carousel-item>
                       </v-carousel>
                       <List />
                       <CatCountInput />
