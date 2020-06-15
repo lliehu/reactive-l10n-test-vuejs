@@ -2,12 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import i18next from 'i18next'
-import Locize from 'i18next-locize-backend'
-import locizeEditor from 'locize-editor'
 import VueI18Next from '@panter/vue-i18next'
 
 import localeResources from '../locales'
 import vuetify from './plugins/vuetify'
+
+import i18nextPhraseBackend from './i18nextPhraseBackend'
 
 Vue.use(VueI18Next)
 
@@ -54,32 +54,25 @@ const MyStorePlugin = {
 }
 Vue.use(MyStorePlugin)
 
-const USE_TRANSLATIONS_FROM_LOCIZE = true
+i18next.use(i18nextPhraseBackend).init({
+  debug: true,
+  lng: store.state.language,
+  resources: null,
+  fallbackLng: 'en',
 
-i18next
-  .use(Locize)
-  .use(locizeEditor)
-  .init({
-    debug: true,
-    lng: store.state.language,
-    resources: USE_TRANSLATIONS_FROM_LOCIZE ? null : localeResources,
-    fallbackLng: 'en',
-
-    // For setting environment variables, see:
-    // https://cli.vuejs.org/guide/mode-and-env.html#environment-variables
-    backend: {
-      referenceLng: 'en',
-      projectId: process.env.VUE_APP_LOCIZE_PROJECT_ID,
-      apiKey: process.env.VUE_APP_LOCIZE_API_KEY
-    },
-
-    editor: {
-      enabled: USE_TRANSLATIONS_FROM_LOCIZE,
-      onEditorSaved: function(lng, ns) {
-        i18next.reloadResources(lng, ns)
-      }
-    }
-  })
+  // For setting environment variables, see:
+  // https://cli.vuejs.org/guide/mode-and-env.html#environment-variables
+  backend: {
+    resources: localeResources,
+    projectId: process.env.VUE_APP_PHRASE_PROJECT_ID,
+    debugMode: true,
+    phraseEnabled: true,
+    prefix: '[[__',
+    suffix: '__]]',
+    fullReparse: true,
+    autoLowercase: false
+  }
+})
 
 i18next.on('languageChanged', function(lng) {
   store.state.language = lng
