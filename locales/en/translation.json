@@ -29,7 +29,7 @@
     "add_new_comment_button": "Add new comment",
     "add_new_comment_title": "Add new comment",
     "cancel_button": "Cancel",
-    "comment_prefix": "Someone commented {{time}}:",
+    "comment_prefix": "Someone commented {{-time}}:",
     "alert_test": {
         "button": "Test alert()",
         "message": "This is message for testing localization of a message in alert()."
